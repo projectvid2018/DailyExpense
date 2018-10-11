@@ -31,9 +31,20 @@
         <activity
             android:name=".ContentActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".nav.activity.BalanceActivity"
-            android:parentActivityName=".MainActivity"
-            ></activity>
+        <activity
+            android:name=".nav.activity.BalanceActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".GroceryActivity" />
+        <activity android:name=".ClothesActivity" />
+        <activity android:name=".MessActivity" />
+        <activity android:name=".EntertainmentActivity" />
+        <activity android:name=".FeesActivity" />
+        <activity android:name=".RentActivity" />
+        <activity android:name=".TelephoneActivity" />
+        <activity android:name=".ElectricityActivity" />
+        <activity android:name=".RepairActivity" />
+        <activity android:name=".CableActivity" />
+        <activity android:name=".TravelActivity"></activity>
     </application>
 
 </manifest>
