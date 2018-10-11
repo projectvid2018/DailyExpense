@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".content.activity.MedicalActivity">
+
+    <include
+        android:id="@+id/medicalToolbarId"
+        layout="@layout/app_bar_layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        android:background="@color/Coral"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/teal"
+            android:gravity="center"
+            android:background="@color/LightGrey"
+            android:layout_marginBottom="1dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Expense"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/teal"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            android:background="@color/LightGrey"
+            android:layout_marginBottom="1dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/teal"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            android:background="@color/LightGrey"
+            android:layout_marginBottom="1dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="vertical"
+        >
+        <ListView
+            android:id="@+id/listViewMedicalActivity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:dividerHeight="2dp"
+            android:divider="@color/LightCoral"
+            android:layout_weight="4.5"
+            >
+
+        </ListView>
+        <Button
+            android:onClick="OpenDialog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="+"
+            android:background="@color/LightGreen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
