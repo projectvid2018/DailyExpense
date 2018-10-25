@@ -1,35 +1,33 @@
 package com.example.gmmha.dailyexpense;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.gmmha.dailyexpense.content.activity.CableActivity;
+import com.example.gmmha.dailyexpense.content.activity.ClothesActivity;
+import com.example.gmmha.dailyexpense.content.activity.ElectricityActivity;
+import com.example.gmmha.dailyexpense.content.activity.EntertainmentActivity;
+import com.example.gmmha.dailyexpense.content.activity.FeesActivity;
+import com.example.gmmha.dailyexpense.content.activity.GroceryActivity;
 import com.example.gmmha.dailyexpense.content.activity.MedicalActivity;
-import com.example.gmmha.dailyexpense.listview.Adapter;
-import com.example.gmmha.dailyexpense.listview.Item;
+import com.example.gmmha.dailyexpense.content.activity.MessActivity;
+import com.example.gmmha.dailyexpense.content.activity.OthersActivity;
+import com.example.gmmha.dailyexpense.content.activity.RentActivity;
+import com.example.gmmha.dailyexpense.content.activity.RepairActivity;
+import com.example.gmmha.dailyexpense.content.activity.TelephoneActivity;
+import com.example.gmmha.dailyexpense.content.activity.TravelActivity;
 import com.example.gmmha.dailyexpense.nav.activity.AboutActivity;
 import com.example.gmmha.dailyexpense.nav.activity.BalanceActivity;
 import com.example.gmmha.dailyexpense.nav.activity.ProfileActivity;
 import com.example.gmmha.dailyexpense.nav.activity.pieChartActivity;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -132,6 +130,81 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
 
 
+    }
+
+    public void gotoGrocery(View view) {
+        Intent intent ;
+        intent = new Intent(this,GroceryActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void gotoClothes(View view) {
+
+        Intent intent ;
+        intent = new Intent(this,ClothesActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoMessActivity(View view) {
+        Intent intent ;
+        intent = new Intent(this,MessActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoEntertainment(View view) {
+        Intent intent ;
+        intent = new Intent(this,EntertainmentActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoFees(View view) {
+        Intent intent ;
+        intent = new Intent(this,FeesActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoRent(View view) {
+        Intent intent ;
+        intent = new Intent(this,RentActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoTelephone(View view) {
+        Intent intent ;
+        intent = new Intent(this,TelephoneActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoElectricity(View view) {
+        Intent intent ;
+        intent = new Intent(this,ElectricityActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoRepair(View view) {
+
+        Intent intent ;
+        intent = new Intent(this,RepairActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoCable(View view) {
+        Intent intent ;
+        intent = new Intent(this,CableActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoTravel(View view) {
+        Intent intent ;
+        intent = new Intent(this,TravelActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoOthers(View view) {
+        Intent intent ;
+        intent = new Intent(this,OthersActivity.class);
+        startActivity(intent);
     }
 
     /*

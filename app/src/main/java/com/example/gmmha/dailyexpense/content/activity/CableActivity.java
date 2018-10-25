@@ -1,7 +1,9 @@
-package com.example.gmmha.dailyexpense;
+package com.example.gmmha.dailyexpense.content.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.gmmha.dailyexpense.R;
 
 public class CableActivity extends AppCompatActivity {
 

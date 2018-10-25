@@ -1,13 +1,15 @@
-package com.example.gmmha.dailyexpense;
+package com.example.gmmha.dailyexpense.content.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MessActivity extends AppCompatActivity {
+import com.example.gmmha.dailyexpense.R;
+
+public class RentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mess);
+        setContentView(R.layout.activity_rent);
     }
 }

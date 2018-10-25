@@ -29,22 +29,23 @@
             android:name=".content.activity.MedicalActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ContentActivity"
+            android:name=".content.activity.ContentActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".nav.activity.BalanceActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".GroceryActivity" />
-        <activity android:name=".ClothesActivity" />
-        <activity android:name=".MessActivity" />
-        <activity android:name=".EntertainmentActivity" />
-        <activity android:name=".FeesActivity" />
-        <activity android:name=".RentActivity" />
-        <activity android:name=".TelephoneActivity" />
-        <activity android:name=".ElectricityActivity" />
-        <activity android:name=".RepairActivity" />
-        <activity android:name=".CableActivity" />
-        <activity android:name=".TravelActivity"></activity>
+        <activity android:name=".content.activity.GroceryActivity" />
+        <activity android:name=".content.activity.ClothesActivity" />
+        <activity android:name=".content.activity.MessActivity" />
+        <activity android:name=".content.activity.EntertainmentActivity" />
+        <activity android:name=".content.activity.FeesActivity" />
+        <activity android:name=".content.activity.RentActivity" />
+        <activity android:name=".content.activity.TelephoneActivity" />
+        <activity android:name=".content.activity.ElectricityActivity" />
+        <activity android:name=".content.activity.RepairActivity" />
+        <activity android:name=".content.activity.CableActivity" />
+        <activity android:name=".content.activity.TravelActivity" />
+        <activity android:name=".content.activity.OthersActivity"></activity>
     </application>
 
 </manifest>
