@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.gmmha.dailyexpense">
 
     <application
@@ -8,44 +9,108 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".start.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:label="Profile"
             android:name=".nav.activity.ProfileActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".nav.activity.AboutActivity"
+            android:label="About"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".nav.activity.pieChartActivity"
+            android:name=".nav.activity.PieChartActivity"
+            android:label="Pie Chart"
             android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".content.activity.MedicalActivity"
+            android:label="Medical Expense"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".content.activity.ContentActivity"
-            android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".nav.activity.BalanceActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".content.activity.GroceryActivity" />
-        <activity android:name=".content.activity.ClothesActivity" />
-        <activity android:name=".content.activity.MessActivity" />
-        <activity android:name=".content.activity.EntertainmentActivity" />
-        <activity android:name=".content.activity.FeesActivity" />
-        <activity android:name=".content.activity.RentActivity" />
-        <activity android:name=".content.activity.TelephoneActivity" />
-        <activity android:name=".content.activity.ElectricityActivity" />
-        <activity android:name=".content.activity.RepairActivity" />
-        <activity android:name=".content.activity.CableActivity" />
-        <activity android:name=".content.activity.TravelActivity" />
-        <activity android:name=".content.activity.OthersActivity"></activity>
+            android:label="Balance"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.GroceryActivity"
+            android:label="Groceries Expense"
+            android:parentActivityName=".MainActivity"
+            />
+
+        <activity
+            android:name=".content.activity.ClothesActivity"
+            android:label="Clothes Expense"
+            android:parentActivityName=".MainActivity"
+            />
+
+        <activity
+            android:name=".content.activity.MessActivity"
+            android:label="Mess Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.EntertainmentActivity"
+            android:label="Entertainment Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.FeesActivity"
+            android:label="Fees Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.RentActivity"
+            android:label="Rent Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.TelephoneActivity"
+            android:label="Telephone Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.ElectricityActivity"
+            android:label="Electricity Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.RepairActivity"
+            android:label="Repair Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.CableActivity"
+            android:label="Cable Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.TravelActivity"
+            android:label="Travel Expense"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".start.activity.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".MainActivity"
+            />
+        <activity
+            android:name=".content.activity.OthersActivity"
+            android:label="Others Expense"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

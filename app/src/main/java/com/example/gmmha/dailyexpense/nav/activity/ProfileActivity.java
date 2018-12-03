@@ -8,16 +8,13 @@ import com.example.gmmha.dailyexpense.R;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private Toolbar pToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        pToolbar = findViewById(R.id.proPageToolbarId);
-        setSupportActionBar(pToolbar);
-        getSupportActionBar().setTitle("Profile");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
     }
 }

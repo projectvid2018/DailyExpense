@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" 
     android:layout_width="match_parent"
     android:padding="20dp"
@@ -26,12 +27,13 @@
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
         android:weightSum="4"
+        android:background="@drawable/edit_text_background"
 
         >
         <EditText
             android:id="@+id/dialogDateId"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:layout_weight="3.5"
             android:hint="@string/date"
             android:textColor="@color/black"
@@ -40,12 +42,14 @@
             android:inputType="date"
             android:background="@drawable/edit_text_background"
 
+
             />
         <ImageView
             android:id="@+id/dialogCalendarId"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:layout_weight=".5"
+            android:padding="2dp"
             android:src="@drawable/calendar"
             />
 

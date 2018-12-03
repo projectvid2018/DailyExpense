@@ -15,10 +15,9 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/mainPageToolbarId"
-            layout="@layout/app_bar_layout" />
-        <include
+            android:id="@+id/mainPageId"
             layout="@layout/content_layout" />
+
 
 
     </LinearLayout>

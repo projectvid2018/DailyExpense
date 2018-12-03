@@ -8,9 +8,5 @@
     android:orientation="vertical"
     tools:context=".nav.activity.ProfileActivity">
 
-    <include
-        android:id="@+id/proPageToolbarId"
-        layout="@layout/app_bar_layout"
-        />
 
 </LinearLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -44,11 +45,11 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="75dp"
+                        android:layout_width="80dp"
                         android:layout_height="75dp"
                         android:background="@drawable/medical_bacground"
-                        android:padding="5dp"
-                        android:src="@drawable/medical"
+                        android:padding="10dp"
+                        android:src="@drawable/drug"
                         android:contentDescription="TODO" />
 
                     <TextView
@@ -182,7 +183,7 @@
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:background="@drawable/mess_background"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:src="@drawable/mess" />
 
                     <TextView
@@ -232,10 +233,10 @@
                     >
 
                     <ImageView
-                        android:layout_width="75dp"
+                        android:layout_width="80dp"
                         android:layout_height="75dp"
                         android:background="@drawable/entertainment_background"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:src="@drawable/entertainment" />
 
                     <TextView
@@ -273,10 +274,10 @@
                     >
 
                     <ImageView
-                        android:layout_width="75dp"
+                        android:layout_width="80dp"
                         android:layout_height="75dp"
-                        android:background="@drawable/mess_background"
-                        android:padding="5dp"
+                        android:background="@drawable/groceries_background"
+                        android:padding="10dp"
                         android:src="@drawable/fees"
                         android:contentDescription="@string/todo" />
 
@@ -371,7 +372,7 @@
                         android:layout_height="75dp"
                         android:background="@drawable/telephone_background"
                         android:padding="10dp"
-                        android:src="@drawable/telephone" />
+                        android:src="@drawable/smartphone" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -555,7 +556,7 @@
                     <ImageView
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:background="@drawable/travel_background"
+                        android:background="@drawable/medical_bacground"
                         android:padding="10dp"
                         android:src="@drawable/travel" />
 
@@ -586,7 +587,7 @@
             android:orientation="horizontal"
 
             >
-            <!-- Cable -->
+            <!-- Others -->
             <android.support.v7.widget.CardView
                 android:onClick="gotoOthers"
                 android:id="@+id/othersId"
@@ -595,6 +596,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:clickable="true"
+                app:cardElevation="10dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:focusable="true">
 
@@ -605,17 +607,17 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="75dp"
+                        android:layout_width="80dp"
                         android:layout_height="75dp"
-                        android:background="@drawable/electricity_background"
-                        android:padding="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/others_background"
                         android:src="@drawable/others" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/cable"
-                        android:textColor="@color/black"
+                        android:text="@string/others"
+                        android:textColor="@color/Black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 

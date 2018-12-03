@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DailyExpense</string>
+    <string name="app_name">Daily Expense</string>
 
     <string name="homeMenu">Home</string>
     <string name="profileMenu">Profile</string>
@@ -35,8 +35,9 @@
     <string name="eIncome">Income</string>
     <string name="income">Income</string>
     <string name="expenses">Expenses</string>
-    <string name="sum">Sum =</string>
-    <string name="plus">+</string>
+    <string name="sum">Sum</string>
+    <string name="others">Others</string>
+    <string name="add">Add</string>
 
     <string-array name="incomeList">
         <item>Category</item>

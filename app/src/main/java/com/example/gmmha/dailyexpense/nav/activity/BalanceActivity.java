@@ -23,10 +23,7 @@ import java.util.ArrayList;
 public class BalanceActivity extends AppCompatActivity {
 
 
-    private Toolbar mToolbar;
-
     TextView balanceView;
-
     double balance = 0.0;
 
     @Override
@@ -34,10 +31,6 @@ public class BalanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_balance);
 
-        // Toolbar
-        mToolbar = findViewById(R.id.balancePageToolbarId);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("Balance");
 
         balanceView = findViewById(R.id.balanceViewId);
     }

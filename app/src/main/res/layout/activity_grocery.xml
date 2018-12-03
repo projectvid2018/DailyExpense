@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".content.activity.GroceryActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/clothsViewId"
+        layout="@layout/table_content_layout"/>
+    <ListView
+        android:id="@+id/groceryListViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="@color/RoyalBlue"
+        android:layout_above="@id/button4"
+        android:layout_below="@+id/clothsViewId"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/buttonGrocery"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="3"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/summation"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@color/Teal"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:id="@+id/sumOfGroceryId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="@string/sum"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/Black"
+            android:background="@color/Tomato"
+            />
+        <Button
+            android:onClick="OpenDialog"
+            android:layout_width="15dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:layout_gravity="end"
+            android:background="@drawable/add_button_background"
+            android:textStyle="bold"
+            android:text="@string/add"
+
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

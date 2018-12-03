@@ -27,15 +27,15 @@ import com.example.gmmha.dailyexpense.content.activity.TravelActivity;
 import com.example.gmmha.dailyexpense.nav.activity.AboutActivity;
 import com.example.gmmha.dailyexpense.nav.activity.BalanceActivity;
 import com.example.gmmha.dailyexpense.nav.activity.ProfileActivity;
-import com.example.gmmha.dailyexpense.nav.activity.pieChartActivity;
+import com.example.gmmha.dailyexpense.nav.activity.PieChartActivity;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     // DrawerLayout
-    private DrawerLayout mDrawerLayout;
+    DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mActionBarDrawerToggle;
-    private NavigationView mNavigationView;
-    private Toolbar mToolbar;
+    Toolbar mToolbar;
+    NavigationView mNavigationView;
 
     double i = 0;
 
@@ -44,12 +44,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        // Toolbar
-        mToolbar = findViewById(R.id.mainPageToolbarId);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("Home");
 
         //DrawerLayout
         mDrawerLayout = findViewById(R.id.drawerId);
@@ -100,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (item.getItemId() == R.id.pieChartMenuId)
         {
-            intent = new Intent(this,pieChartActivity.class);
+            intent = new Intent(this,PieChartActivity.class);
             startActivity(intent);
         }
         else if (item.getItemId() == R.id.balanceMenuId)

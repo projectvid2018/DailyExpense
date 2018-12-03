@@ -8,8 +8,6 @@
     android:orientation="vertical"
     tools:context=".nav.activity.AboutActivity">
 
-    <include android:id="@+id/aboutToolbarId"
-        layout="@layout/app_bar_layout"
-        />
+
 
 </LinearLayout>
